@@ -1,14 +1,14 @@
 import { styled } from 'styled-components'
-import { theme } from '../../../themes'
+import { theme } from '@/themes'
 import type {
   CSSPropertyGridArea,
   CSSPropertyGridAutoFlow,
   CSSPropertyGridColumn,
   CSSPropertyGridRow,
   Responsive,
-} from '../../../types/styles'
-import { toPropValue } from '../../../utils/styles'
-import Box, { BoxProps } from '../Box'
+} from '@/types/styles'
+import { toPropValue } from '@/utils/styles'
+import Box, { BoxProps } from '@/components/layout/Box'
 
 type GridProps = BoxProps & {
   gridGap?: Responsive<string>
