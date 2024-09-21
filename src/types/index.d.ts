@@ -1,2 +1,2 @@
 export * from './data.d'
-// export * from './styles'
+export * from './styles.d'
