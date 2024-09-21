@@ -1,6 +1,7 @@
 import localFont from 'next/font/local'
 import Head from 'next/head'
 import Image from 'next/image'
+import Button from '@/components/atoms/Button'
 import styles from '@/styles/Home.module.css'
 
 const geistSans = localFont({
@@ -111,6 +112,7 @@ export default function Home() {
             />
             Go to nextjs.org →
           </a>
+          <Button>hoge</Button>
         </footer>
       </div>
     </>
