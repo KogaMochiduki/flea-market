@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react'
-import { theme } from '@/themes'
 import { styled } from 'styled-components'
+import { theme } from '@/themes'
 import { toPropValue } from '@/utils/styles'
 
 export interface TextAreaProps
@@ -22,8 +22,7 @@ export interface TextAreaProps
 const StyledTextArea = styled.textarea<{ hasError?: boolean }>`
   ${toPropValue('color', 'black', theme)}
   border: 1px solid
-    ${({ hasError }) =>
-      hasError ? theme.colors.danger : theme.colors.border};
+    ${({ hasError }) => (hasError ? theme.colors.danger : theme.colors.border)};
   border-radius: 5px;
   box-sizing: border-box;
   outline: none;
