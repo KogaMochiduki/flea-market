@@ -8,11 +8,9 @@ import { toPropValue } from '@/utils/styles'
 const Input = styled.input<{ hasError?: boolean; hasBorder?: boolean }>`
   ${({ hasBorder, hasError }) => {
     const styles = []
-    if (hasError) {
-      styles.push(toPropValue('color', 'danger', theme))
-    } else {
-      styles.push(toPropValue('color', 'black', theme))
-    }
+
+    styles.push(toPropValue('color', 'black', theme))
+
     if (hasBorder) {
       styles.push('border: 1px solid ')
       if (hasError) {
