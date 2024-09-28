@@ -1,5 +1,5 @@
-import { ApiContext, User } from '../../types'
-import { fetcher } from '../../utils'
+import { ApiContext, User } from '@/types'
+import { fetcher } from '@/utils'
 
 export type SigninParams = {
   // ユーザー名
