@@ -33,7 +33,7 @@ describe('Dropdown', () => {
     renderResult.unmount()
   })
 
-  it('ファイルがドロップされたらonDropが呼ばれる', async () => {
+  it('選択肢がクリックされたらonChangeが呼ばれる', async () => {
     // act関数で囲む事でプルダウンを開いているようにDOMが更新された事を保証する
     await act(async () => {
       // クリックして、ドロップダウンの選択肢のビューを表示
